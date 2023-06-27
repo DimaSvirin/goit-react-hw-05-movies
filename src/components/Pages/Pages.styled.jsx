@@ -38,15 +38,18 @@ export const MovieForm = styled.div`
   }
 
   input {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     border: 1px solid;
     border-radius: 5px;
     margin-right: 10px;
   }
+  input::placeholder {
+    font-size: 0.9rem;
+  }
   
   button {
     border: 1px solid;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     border-radius: 5px;
     background-color: #fff;
       &:hover {
