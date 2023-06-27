@@ -38,7 +38,7 @@ export const MovieForm = styled.div`
   }
 
   input {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     border: 1px solid;
     border-radius: 5px;
     margin-right: 10px;
@@ -46,7 +46,7 @@ export const MovieForm = styled.div`
   
   button {
     border: 1px solid;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     border-radius: 5px;
     background-color: #fff;
       &:hover {
