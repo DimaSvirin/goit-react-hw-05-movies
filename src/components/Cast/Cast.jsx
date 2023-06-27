@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { CastStyled } from 'components/Cast/Cast.styled';
+import nopersonphoto from "../../images/nopersonphoto.png"
 
 const Cast = () => {
     const [casts, setCasts] = useState([]);
@@ -25,7 +26,7 @@ const Cast = () => {
                   <li className="thumb-cast" key={cast_id}>
                     <p>Character: {character || 'none'}</p>
                     <p>Name: {name || 'none'}</p>
-                    {/* <img src={profile_path ? `https://image.tmdb.org/t/p/w500/${profile_path}` : "./images/image.jpeg"} alt={name} /> */}
+                    <img src={profile_path ? `https://image.tmdb.org/t/p/w200/${profile_path}` : nopersonphoto} alt={name} />
     
                     <br />
                   </li>

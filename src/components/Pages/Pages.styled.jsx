@@ -10,7 +10,7 @@ export const Details = styled.div`
 
   h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   p {
     margin: 30px 0 0;
@@ -29,3 +29,30 @@ export const Details = styled.div`
     }
   }
 `;
+
+export const MovieForm = styled.div`
+  label {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: 1.1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    border: 1px solid;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #fff;
+      &:hover {
+        background-color: blue;
+        color: #fff;
+      }
+      
+  }
+`

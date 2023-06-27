@@ -11,5 +11,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
-// https://api.themoviedb.org/3/movie/550?api_key=1908df0a632eb4291cd1ba925f0a1a18
