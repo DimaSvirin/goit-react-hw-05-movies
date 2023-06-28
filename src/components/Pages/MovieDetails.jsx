@@ -1,5 +1,5 @@
 import { FetchDetails } from "components/API/API";
-import React, { useState, useEffect, Suspense } from "react"
+import React, { useState, useEffect, Suspense, useRef } from "react"
 import { Link, Outlet, useLocation, useParams } from "react-router-dom"
 import { Details } from './Pages.styled';
 
@@ -20,12 +20,12 @@ const MovieDetails = () => {
     }, [id]);
 
     const location = useLocation();
-    
+    const comeBack = useRef(location.state?.from || '/');
     
     return (
         <Details>
             <div>
-                <Link to={location.state?.from ?? '/'}>Back</Link>
+                <Link to={comeBack.current}>Back</Link>
             </div>
             <article>
             <div className="card">
